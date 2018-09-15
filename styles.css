@@ -302,6 +302,10 @@ footer span {
 	margin: 0 0 0.5em 0;	
 }
 
+.video {
+	margin-bottom: 0.5em;	
+}
+	
 iframe {
 	width: 80%;
 }
