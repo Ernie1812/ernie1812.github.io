@@ -264,17 +264,8 @@ footer span {
 	margin: 0 1em 0.2em 0;
 }
 
-
-@media (max-width: 800px) {
-	.grid {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-}
-
 @media screen and (max-width: 800px) {
+
 
 .container {
 	max-width: 800px;
@@ -310,6 +301,18 @@ footer span {
 	font-size: 1rem;
 	margin: 0 0 0.5em 0;	
 }
+
+iframe {
+	width: 80%;
+}
+
+.grid {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 
 .content {
 	margin: auto 1.5em;
