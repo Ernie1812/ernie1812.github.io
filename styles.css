@@ -20,6 +20,7 @@ body {
 	max-width: 1080px;
  	width: 100%;
  	margin: 0 auto;
+ 	
  }	
 
 
@@ -174,7 +175,7 @@ h2, p {
 	background-color: lightblue;
 	border: 2px solid black;
 	max-width: 15em;
-	width: 
+	width: auto;
 	padding: 1em;
 	margin: 0 1em;
 
@@ -269,15 +270,17 @@ footer span {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 	}
 }
 
 @media screen and (max-width: 800px) {
+
 .container {
 	max-width: 800px;
  	width: 100%;
  	margin: 0 auto;
- }	
+ }
 
 .header {
 	display: block;
@@ -307,4 +310,17 @@ footer span {
 	font-size: 1rem;
 	margin: 0 0 0.5em 0;	
 }
+
+.content {
+	margin: auto 1.5em;
+	max-width: 100%;
+	padding: 1.5em;
+}
+
+.plan {
+	
+	border: 0.5em solid ghostwhite;
+
+}
+
 }
