@@ -306,7 +306,10 @@ footer span {
 	margin: 0 0.5em;
 	padding: 5em 0.5em 0.5em 0.5em;
 }
-	
+
+.btn {
+	margin-bottom: 0;
+	}
 .video {
 	margin-bottom: 0.5em;	
 }
