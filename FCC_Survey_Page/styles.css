@@ -1,0 +1,89 @@
+:root {
+  box-sizing: border-box;
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+*,
+::before ::after {
+  box-sizing: inherit;
+}
+
+#main {
+  
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+#wrapper {
+  background-color: #66ccf3;
+  border-radius: 10px;
+  box-sizing:border-box;
+  padding:  2em;
+  line-height: 1.5em;
+}
+
+#title {
+  text-align: center;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+#description{
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+body {
+  background-color: white;
+  font-size: 1.5em;
+}
+
+
+
+fieldset {
+  border: none;
+}
+
+input {
+  font-size: 1.5em;
+}
+
+.input-data input {
+	margin-left: 3.5em;
+	width: 70%;
+	border-radius: 8px;
+}
+
+.input-data label {
+	position: absolute;
+  font-size: 1em;
+}
+
+select {
+  font-size: 1em;
+}
+
+textarea {
+  font-size: 1.2em;
+  max-width: 100%;
+}
+
+input[type=radio] {
+    width: 1em;
+    height: 0.8em;
+}
+
+input[type=checkbox] {
+    width: 1em;
+    height: 0.8em;
+}
+
+#submit{
+  font-size: 1em;
+  width: 10%; 
+  cursor: pointer;
+  width: auto;
+  }
+#submit:hover {
+  background: darkgray;
+}

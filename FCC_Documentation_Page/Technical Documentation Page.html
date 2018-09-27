@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Basics</title>
+  <meta name="viewport" content-type="width=device-width initial-scale=1">
+  
+</head>
+
+<body>
+  <!-- Nav -->
+  <div class="wrapper_1">
+    <nav id="navbar">
+      <header>
+        <h1>Flexbox Basics</h1>
+      </header>
+      <ul id="navbar-list">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Flexbox_Layout">Flexbox Layout</a></li>
+        <li><a class="nav-link" href="#Justify_content_and_Align_items">Justify content and Align items</a></li>
+        <li><a class="nav-link" href="#Controlling_a_single_item">Controlling a single item</a></li>
+        <li><a class="nav-link" href="#The_flex_property">The flex property</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Text -->
+  <div class="wrapper_2">
+    <main id="main-doc">
+
+      <!-- Introduction -->
+      <section class="main-section" id="Introduction">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <P>The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities.</P> <br>
+        <P>When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout,
+          which controls columns and rows together.</P>
+      </section>
+
+      <!-- Flexbox Layout -->
+      <section class="main-section" id="Flexbox_Layout">
+        <header>
+          <h2>Flexbox Layout</h2>
+        </header>
+        <p>The two main components of a Flexbox layout are the container and the items. This example contains a container with three items:</P>
+
+        <div class="code-container">
+          <code>
+    &lt;nav class="container"&gt; <br>
+        &lt;div&gt;Home&lt;/div&gt;<br>
+        &lt;div&gt;Search&lt;/div&gt;<br>
+        &lt;div&gt;Logout&lt;/div&gt;<br>
+    &lt;/nav&gt;<br>
+            </code>
+        </div>
+
+        <p>Before using the Flexbox layout, the <code>&lt;div&gt;</code> elements will be stacked on top of each other like this (some styling has been added for clarity): </p>
+
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/1600/1*egtZCVQirK8mJiacL98eBA.png" alt="default example">
+        </div>
+
+        <p>
+          To turn this into a Flexbox layout, give the container the following CSS property:
+        </p>
+        <div class="code-container">
+          <code>
+  .container {<br>
+      display: flex;<br>
+  }<br>
+          </code>
+        </div>
+        <p>This will automatically position the items along the horizontal axis.</p>
+
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/1600/1*DMA-NUgXG15-qDBAnLu3tA.png" alt="default example">
+        </div>
+      </section>
+
+      <!-- Justify and Align -->
+      <section class="main-section" id="Justify_content_and_Align_items">
+        <header>
+          <h2>Justify content and Align items</h2>
+        </header>
+        <p><b>Justify-content</b> and <b>align-items</b> are two CSS properties which help us distribute the items in the container. They control how the items are positioned along the main axis and cross axis. In this case (but not always) the main axis
+          is horizontal and the cross axis is vertical:</p>
+
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/800/1*SDah34Yygu4CkLUcdsSytQ.png" alt="default example">
+
+        </div>
+
+        <p>
+          Center all the items along the <b>main axis</b> by using <code class="highlight">justify-content:</code></p>
+        <div class="code-container">
+          <code>
+  .container {<br>
+      display: flex;<br>
+      justify-content: center;<br>
+  }<br>
+          </code>
+        </div>
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/800/1*1NQGeHIcXFdlYsNwP-kuXQ.png" alt="default example">
+
+        </div>
+
+        <p>
+          Or set it to <code class="highlight">space-between</code> to add space between the items:</p>
+        <div class="code-container">
+          <code>
+  .container {<br>
+      display: flex;<br>
+      justify-content: space-between;<br>
+  }<br>
+          </code>
+        </div>
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/800/1*rYctxBrNeO2019wscgaaQA.png  " alt="default example">
+        </div>
+
+        <p>These are the values you can set for <code class="highlight">justify-content:</code></p>
+        <div class="list">
+          <ul>
+            <li>flex-start (default)</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>space-between</li>
+            <li>space-around</li>
+            <li>space-evenly</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!--Controlling a single item -->
+      <section class="main-section" id="Controlling_a_single_item">
+        <header>
+          <h2>Controlling a single item</h2>
+        </header>
+
+        <p>We can also control single <b>items</b>. If for example you want to keep the first two items on the left side, but move the <code class="highlight">logout</code> button to the right side you can use the technique of setting the margin to
+          <code
+            class="highlight">auto</code>.</p>
+
+        <div class="code-container">
+          <code>
+  .logout {<br>
+      margin-left: auto;<br>
+  }<br>
+        </code>
+        </div>
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/800/1*Z9GbnGBvlJdIYjiH3DQbbQ.png" alt="default example">
+        </div>
+
+        <p>If you want both the <code class="highlight">search</code> item and the <code class="highlight">logout</code> item to be pushed to the right hand side, add the <code class="highlight">margin-left</code> to the <code class="highlight">search</code>          item instead.</p>
+        <div class="code-container">
+          <code>
+  .search {<br>
+      margin-left: auto;<br>
+  }<br>
+      </code>
+        </div>
+
+        <P>This will push the search item as far to the right hand side as possible, which will push the logout item with it:</P>
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/800/1*C5bwvvQjhgnrufVNo4jfwA.png" alt="default example">
+        </div>
+
+      </section>
+
+      <!-- The flex property -->
+      <section class="main-section" id="The_flex_property">
+        <header>
+          <h2>The flex property</h2>
+        </header>
+        To create responsive items use the <code class="highlight">flex</code> property. You can use this instead of percentages by targeting all the items and giving them a <code class="highlight">flex</code> value of <code class="highlight">1</code>.
+
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/800/1*fI8C475J2qbF5LMu82voEQ.png" alt="default example">
+        </div>
+
+        <p>This stretches the items to fill the entire container.</p><br>
+
+        <p>In many cases you’d probably want one of the items to take up the extra width, and thereby only set one if them to have flexible width. You can for example make the <code class="highlight">search</code> item take up all the extra space:</p>
+
+        <div class="code-container">
+          <code>
+  .search {<br>
+      flex: 1;<br>
+  }<br>
+    </code>
+        </div>
+        <div class="images">
+          <img class="example-img" src="https://cdn-images-1.medium.com/max/1600/1*7nmqNtWDHHh7pCgsUAUXfw.png" alt="default example">
+        </div>
+
+        <p>The flex property is actually a shorthand three properties: <b>flex-grow</b>, <b>flex-shrink</b> and <b>flex-basis</b>. Together they allow us to control how flex items behave inside their parent container:</p>
+        <div class="list">
+          <ul>
+            <li><code class="highlight">flex-grow</code> determines how flex items grow inside their parent. Default <code class="highlight">0</code></li>
+            <li><code class="highlight">flex-shrink</code> determines how flex items shrink when their parent gets smaller. Default <code class="highlight">1</code>.</li>
+            <li><code class="highlight">flex-basis</code>is determines the size of flex items before space is distributed and how content is treated. Default <code class="highlight">auto</code>.</li>
+          </ul>
+        </div>
+
+        <div class="images">
+          <img class="example-img-lrg" src="https://softcover.s3.amazonaws.com/636/learn_enough_css/images/figures/flex-item.png" alt="default example">
+        </div>
+
+        <div class="sources">
+          <P><a href="https://medium.freecodecamp.org/learn-css-flexbox-in-5-minutes-b941f0affc34">Source 1</a></p>
+          <p><a href="https://www.learnenough.com/css-and-layout-tutorial/css/flex-intro/flexbox_shorthand">Source 2</a></p>
+        </div>
+  </div>
+  </section>
+  </main>
+  </div>
+
+</body>
+</html>
