@@ -1,134 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Personal Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="styles.css" />
-	<title>Language School</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <!--navbar -->
+  <nav id="navbar">
+    <Ul>
+      <li><a href="#welcome-section">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact-header">Contact</a></li>
+    </Ul>
+  </nav>
 
-	<div class="container">		
+  <!-- Welcome Section" -->
 
-		<header class="header">
-			<div class="left">
-				
-				<img class="logo" src="https://lerni.us/img/layout/xbrand_hero_flags.png.pagespeed.ic.zrbaFZYEoc.png" alt="logo">
-				
-				<h1 class="title" style="">FCC Language School</h1>
-			</div>
+  <div id="welcome-section">
+    <div id="welcome-text">
+      <h1>Hi I'm Ernesto.</h1><br>
+      <h2>I'm learning HTML and CSS.</h2>
+    </div>
+  </div>
 
-			<nav class="right">
-				<ul class="site-nav">
-					<li><a href="#Languages">Languages</a></li>		
-					<li><a href="#pricing">Pricing</a></li>
-					<li><a class="last" href="#Locations">Locations</a></li>
-				</ul>
-			</nav>
-		</header>
+  <!-- Projects Section -->
+  <div id="projects">
+    <h2 class="projects-header">These are projects I've created.</h2>
 
-		<main class="main">
+    <!-- project 1 -->
+    <div id="project-wrapper">
 
-			<section class="contact">
-				<h2>Effective Student Centered Learning</h2>
-				<form id="form" action="">
+      <div class="screenshots">
+        <a class="project-tile" href="https://codepen.io/ErnieE/full/pOeKqr/" target="_blank">
+					<img class="project-pic" src="https://github.com/Ernie1812/images/blob/master/Tribute_page.PNG?raw=true" alt="tribute_page"/>
+					<div class="project-title">Tribute Page</div>	
+				</a>
+      </div>
 
-					<input class="email-input" type="email" name="email" placeholder="Enter your email address" />
-					<div class="email-submit">
-						<input class="btn" type="submit" name="submit" value="Get Started" ></input></div>
-					</form>
-				</section>
+      <!-- project 2 -->
+      <div class="screenshots">
+        <a class="project-tile" href='https://codepen.io/ErnieE/pen/RJJOGy' target='_blank'><img class="project-pic" src="https://github.com/Ernie1812/images/blob/master/survey_form.PNG?raw=true" alt="survey_page"/>
+					<div class="project-title">Survey Page</div>
+				</a>
+      </div>
 
-				<div class="descriptions">
+      <!-- project 3 -->
 
-					<div class="content">
-						<img class="icon" src="https://cdn0.iconfinder.com/data/icons/need-vol-2/32/Earth_International_Internet_World_wild_Planet_Language-512.png" alt="Languages icon">
-						<div class="body">
-							<h2>Languages</h2>
-							<p>Our school provides the opportunity to learn and become fluent in English, Spanish, French and German.</p>
-						</div>
-					</div>
+      <div class="screenshots">
+        <a class="project-tile" href='https://codepen.io/ErnieE/pen/OooPBQ' target='_blank'><img class="project-pic" src='https://github.com/Ernie1812/images/blob/master/Landing_Page.PNG?raw=true' alt='landing_page'/>
+					<div class="project-title">Landing Page</div>
+				</a>
+      </div>
 
-					<div class="content">
-						<img class="icon" src="https://cdn2.iconfinder.com/data/icons/office-49/512/education_training_learning_courses-512.png" alt="courses icon">
-						<h2>Courses</h2>
-						<p>We offer a wide range of courses which include general, business, academic and exam prepartation courses for all languages taught on our campus.
-						</p>
-					</div>
+      <!-- project 4 -->
+      <div class="screenshots">
+        <a class="project-tile" href='https://codepen.io/ErnieE/pen/WgaBpg' target='_blank'><img class="project-pic" src="https://github.com/Ernie1812/images/blob/master/tech_doc.PNG?raw=true" alt="technical_page"/>
+					<div class="project-title">Technical Documentations  Page</div></a>
+      </div>
+    </div>
+  </div>
 
-					<div class="content">
-						<img class="icon" src="https://cdn4.iconfinder.com/data/icons/startup-line/512/certificate-512.png" alt="Accreditations icon">
-						<h2>Accreditations</h2>
-						<p>Our School is accreddited by the Internationa Lanugage School Council and the London Schools Association so you can be assured of the quality of our instruction. </p>
-					</div>
-					
-				</div>
+  <!--links-->
+  <div class="profile">
+    <div id="profile-wrapper">
+      <div class="websites">
+        <ul>
+          <li><a class='website-link' id="profile-link" href="https://codepen.io/ErnieE/" target="_blank"><img src="http://cdn.onlinewebfonts.com/svg/img_336066.png" alt="codepen_icon"></a></li>
 
-				<div class="video">
-					<iframe width="420" height="315"
-					src="https://www.youtube.com/embed/nQJ8HPrFkSI">
-				</iframe>
-			</div>
+          <li><a class='website-link'  href="https://github.com/Ernie1812" target="_blank"><img src="http://icons-for-free.com/free-icons/png/512/1220319.png" alt="github_icon"></a></li>
 
-			<div class="grid">
-				<div class="plan">
-					<p>All Levels Per Lesson Price</p>
-					<h2 class="price">€50</h2>
-					<ul class="features">
-						<li>No Commitment</li>
-						<li>Flexible Schedules</li>
-						<li>Pesonalized Lessons</li>
-						<li>All Languages</li>
-					</ul>
-					<button class="btn">Select</button>
-				</div>
-				
+          <li><a class='website-link' href="https://www.freecodecamp.org/ernie1812" target="_blank"><img src="http://www.stickpng.com/assets/images/5847f91ccef1014c0b5e48b8.png" alt="fcc_icon"></a></li>
+        </ul>
+      </div>
+    </div>
 
-				<div class="plan">
-					<p>Beginner's 4 Week Course</p>
-					<h2 class="price">€650</h2>
-					<ul class="features">
-						<li> Lorem ipsum</li>
-						<li>Lorem ipsum</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum</li>
-					</ul>
-					<button class="btn">Select</button>
-				</div>
+    <!-- contact section -->
+    <div class="contact-header" id="contact-header">
+      <h2>Contact</h2>
+    </div>
 
-				<div class="plan">
-					<p>Intermediate 8 Week Course</p>
-					<h2 class="price">€1,150</h2>
-					<ul class="features">
-						<li>Lorem ipsum</li>
-						<li>Lorem ipsum</li>
-						<li>Lorem ipsum dolor</li>
-						<li>Lorem ipsum</li>
-					</ul>
-					<button class="btn">Select</button>
-				</div>
-			</div>
+    <div class="contact" id="contact">
 
+      <form class="contact-message" action="">
 
+        <label for="name">Name</label>
+        <input type="text" class="inputs" name="firstname" placeholder="Your name...">
 
+        <label for="email">Email Address</label>
+        <input type="email" name="email" placeholder="Your email address...">
 
-
-		</div>
-
-
-
-
-
-	</main>
-	
-</div>	
-<footer>
-	<ul>
-		<li><a href="#">Privacy</a></li>
-		<li><a href="#">Terms</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-	<span>Copyfake 2018, FCC Language School</span>
-</footer>
-
-</body>
+        <label for="message">Message</label>
+        <textarea class="message" placeholder="Write your message here." rows="10" cols="10"></textarea>
+        <input class="button" type="submit" value="send">
+      </form>
+    </div>
+  </div>
+  </div>
+  </body>
 </html>
+
+
