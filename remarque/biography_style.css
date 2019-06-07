@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Quando&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quando', Arial, sans-serif;
+    background-color: #bbb;
+}
+
+a {
+    color: #000;
+}
+
+    /* Navigation Start */
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Cinzel', Arial, sans-serif;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header ul a{
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+}
+
+.header ul a:hover {
+    background-color: #ddd;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding:  10px 20px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+
+}
+
+.header .menu-icon .nav-icon:before {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top:5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top:-5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+@media screen and (min-width:865px) {
+    .header li {
+        float: left;
+    }
+    
+    .header li a {
+        padding: 20px 30px;
+    }
+    
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    
+    .header .menu-icon {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 485px) { 
+    .header .logo {
+        font-size: 1.3em;
+    }
+
+    .header .menu-icon {
+        padding: 14px 10px;
+    }
+   
+}
+
+    /* Navigation End */
+
+/* Body */
+
+main {
+    width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    line-height: 2em;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+/* figure and figcaption */
+
+figcaption {
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+figure {
+  float: left;
+  width: 40%;
+  margin: 0.5em 1em 1em 0em;
+  padding: 0.3em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.flanders-image {
+  width: 100%;
+  height: auto;
+}
+
+.book-image {
+  margin: 0.5em 0.5em 1em 0em;
+  float: left;
+  padding-right: 0.5em;
+}
+
+@media screen and (max-width:465px) {
+    figure {
+        display: block;
+        float: none;
+        width: 80%;
+        margin: auto
+    }
+    
+    .western-front-container{
+        width: 100%;
+        margin: auto
+    }
+    
+    .book-image {
+        display: block;
+        float: none;
+        margin: auto;
+        width: 80%;
+    }
+}

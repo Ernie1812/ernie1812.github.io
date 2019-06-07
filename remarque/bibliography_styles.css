@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Quando&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quando', Arial, sans-serif;
+    background-color: #bbb;
+}
+
+a {
+    color: #000;
+}
+
+    /* Navigation Start */
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Cinzel', Arial, sans-serif;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header ul a{
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+}
+
+.header ul a:hover {
+    background-color: #ddd;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding:  10px 20px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+
+}
+
+.header .menu-icon .nav-icon:before {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top:5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top:-5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+@media screen and (min-width:865px) {
+    .header li {
+        float: left;
+    }
+    
+    .header li a {
+        padding: 20px 30px;
+    }
+    
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    
+    .header .menu-icon {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 485px) { 
+    .header .logo {
+        font-size: 1.3em;
+    }
+
+    .header .menu-icon {
+        padding: 14px 10px;
+    }
+   
+}
+
+    /* Navigation End */
+
+
+main {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+    line-height: 2em;
+}
+
+.page-title {
+    padding-top: 5.5rem;
+    text-align: center;
+}
+.bibliography {
+    width: 90%;
+    margin: auto;
+    line-height: 2em;
+    padding: 2rem;
+}
+
+ /* Nav Cards Start */  
+
+.main-content {
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+}
+
+.nav-card {
+    position: relative;
+    width: 15em;
+    height: 20em;
+    margin: 3em;
+    box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.1);
+    border-radius: 1em;
+}
+
+.card-image {
+    width: 20em;
+    height: 20em;
+    object-fit: fill;
+    border-radius: 1em;
+}
+
+.card-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;   
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 10em;
+}
+
+.nav-card:hover .card-image {
+  opacity: 0.1;
+}
+
+.nav-card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #fffdf5;
+  color: #3f3f5a;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 10px;
+}
