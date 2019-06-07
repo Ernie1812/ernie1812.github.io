@@ -1,0 +1,117 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before ::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+#image {
+  border: 3px solid white;
+  border-radius: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+#img-div {
+  background-color: #1b3333;
+  color: white;
+  padding: 1em;
+}
+
+#title {
+  margin: 0;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+
+}
+#novelist {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#img-caption  {
+  text-align: center;
+}
+#quote {
+  font-style: oblique;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0em 0em 0em;
+}
+#cite {
+  margin: 0;
+  text-align: right;
+  padding: 0;
+}
+
+h2 {
+  margin-left: 0.5em;
+}
+
+ul {
+  margin-left: 1em;
+}
+p {
+  line-height: 1.5em;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+
+.bibliography {
+  line-height: 1.5em;
+  padding: 1em;
+  background-color: #1b3333;
+  color: white;
+}
+
+.wiki {
+  text-align: center;
+}
+
+.book-image {
+  margin: 0em 0.5em 0em 2.5em;
+  float: left;
+  padding-right: 0.5em;
+}
+
+/* figure and figcaption */
+
+figcaption {
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+figure {
+  float: left;
+  width: 30%;
+  margin: 0em 0.5em 0em 2.5em;
+  padding: 0.3em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.flanders-image {
+  width: 100%;
+  height: auto;
+}
