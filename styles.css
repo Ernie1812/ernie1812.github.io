@@ -47,9 +47,13 @@ li a {
 }
 
 #welcome-section {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background: url("https://github.com/Ernie1812/ernie1812.github.io/blob/master/background.jpg?raw=true");
   background-size: cover;
+      background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 #welcome-text {
